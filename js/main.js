@@ -14,17 +14,17 @@ jQuery(document).ready(function($) {
       lengthCode--;
       $("#fields .numberfield:eq(" + lengthCode + ")").addClass("active");
 
-      if (lengthCode == 3) {
+      if (lengthCode == 4) {
 
         // Check the PIN
-        if (enterCode == pin) {
+       // if (enterCode == pin) {
           // Right PIN!
           /*$("#fields .numberfield").addClass("right");
           $("#numbers").addClass("hide");
           $("#anleitung p").html("Amazing!<br>You entered the correct Code!");*/
 		  window.location.href = "pin-setconfirm.html";
 
-        } else {
+        /*} else {
           // Wrong PIN!
           $("#fields").addClass("miss");
           enterCode = "";
@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
             $("#fields").removeClass("miss");
           }, 500);
 
-        }
+        }*/
 
       } else {}
 
