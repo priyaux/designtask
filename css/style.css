@@ -29064,6 +29064,8 @@ div.tagsinput span.tag a {
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   border-radius: 0.7rem;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .auth .auth-form-dark .form-control, .auth .auth-form-dark .asColorPicker-input, .auth .auth-form-dark .dataTables_wrapper select, .dataTables_wrapper .auth .auth-form-dark select, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=text], .auth .auth-form-dark
