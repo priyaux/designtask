@@ -41,11 +41,12 @@ jQuery(document).ready(function($) {
 
     });
     
-    $("#restartbtn").click(function(){
-      enterCode = "";
+    $("#cancel").click(function(){
+		window.location.href = "index.html";
+      /*enterCode = "";
       $("#fields .numberfield").removeClass("active");
       $("#fields .numberfield").removeClass("right");
-      $("#numbers").removeClass("hide");
+      $("#numbers").removeClass("hide");*/
       //$("#anleitung p").html("<strong>Please enter the correct PIN-Code.</strong><br> It is: 1234 / Also try a wrong code");
     });
 
