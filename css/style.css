@@ -9263,9 +9263,9 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
+  min-height: 100%;
+  padding-right: 0px;
+  padding-left: 17px;
 }
 
 .col {
@@ -11003,14 +11003,14 @@ fieldset:disabled a {
 
 .btn-primary, .navbar.default-layout-navbar.navbar-primary .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .btn-primary, .wizard > .actions a {
   color: #fff;
-  background-color: #642B73;
-  border-color: #642B73;
+  background-color: #068697;
+  border-color: #036162;
 }
 
 .btn-primary:hover, .navbar.default-layout-navbar.navbar-primary .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .btn-primary:hover, .wizard > .actions a:hover {
   color: #fff;
-  background-color: #C6426E;
-  border-color: #C6426E;
+  background-color: #00BCD4;
+  border-color: #00BCD4;
 }
 
 .btn-primary:focus, .navbar.default-layout-navbar.navbar-primary .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .btn-primary:focus, .wizard > .actions a:focus, .btn-primary.focus, .navbar.default-layout-navbar.navbar-primary .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .focus.btn-primary, .wizard > .actions a.focus {
@@ -12810,7 +12810,7 @@ input[type="button"].btn-block {
 .input-group > .input-group-append:last-child > .swal2-styled:not(:last-child):not(.dropdown-toggle), .swal2-modal .swal2-buttonswrapper .asColorPicker-wrap > .input-group-append:last-child > .swal2-styled:not(:last-child):not(.dropdown-toggle), .wizard > .actions
 .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle), .wizard > .actions .asColorPicker-wrap > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child), .asColorPicker-wrap > .input-group-append:last-child > .input-group-text:not(:last-child) {
-  border-top-right-radius: 0;
+  border-top-right-radius: 0rem;
   border-bottom-right-radius: 0;
 }
 
@@ -19639,7 +19639,7 @@ p {
 
 h1,
 .h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h2,
@@ -19826,10 +19826,7 @@ html {
 .page-body-wrapper.full-page-wrapper {
   width: 100%;
   min-height: 100vh;
-  background: #642B73;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
 .main-panel {
@@ -22923,6 +22920,8 @@ code {
   color: #686868;
   width: auto;
   border: none;
+  border-top-left-radius: .3rem;
+  border-bottom-left-radius: .3em;
 }
 
 .input-group-append .input-group-text,
@@ -22930,6 +22929,7 @@ code {
   border-color: #e0e0ef;
   padding: 0.875rem 0.75rem;
   color: #686868;
+  border: none;
 }
 
 .form-control, .asColorPicker-input, .dataTables_wrapper select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text],
@@ -29063,7 +29063,7 @@ div.tagsinput span.tag a {
 .auth .auth-form-dark {
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
-  border-radius:.7rem;
+  border-radius: 0.7rem;
 }
 
 .auth .auth-form-dark .form-control, .auth .auth-form-dark .asColorPicker-input, .auth .auth-form-dark .dataTables_wrapper select, .dataTables_wrapper .auth .auth-form-dark select, .auth .auth-form-dark .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth .auth-form-dark input[type=text], .auth .auth-form-dark
@@ -29188,10 +29188,11 @@ div.tagsinput span.tag a {
 
 .auth form .form-group {
   margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .auth form .form-group label {
-  font-size: .8125rem;
+  font-size: 1rem;
 }
 
 .auth form .form-group .form-control, .auth form .form-group .asColorPicker-input, .auth form .form-group .dataTables_wrapper select, .dataTables_wrapper .auth form .form-group select, .auth form .form-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth form .form-group input[type=text], .auth form .form-group
@@ -29199,9 +29200,11 @@ div.tagsinput span.tag a {
 .jsgrid .jsgrid-table .jsgrid-filter-row .auth form .form-group select, .auth form .form-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .auth form .form-group input[type=number], .auth form .form-group .select2-container--default .select2-selection--single, .select2-container--default .auth form .form-group .select2-selection--single, .auth form .form-group .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth form .form-group .select2-search__field, .auth form .form-group .typeahead, .auth form .form-group
 .tt-query, .auth form .form-group
 .tt-hint {
-  background: rgba(0, 0, 0, 0.18);
-  border-radius: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-top-right-radius: .3rem;
   font-size: .9375rem;
+  border: none;
+  border-bottom-right-radius: .3rem;
 }
 
 .auth form .auth-form-btn {
@@ -29398,23 +29401,23 @@ div.tagsinput span.tag a {
 ----*/
 
 #pincode {
-  position: fixed;
-  overflow: hidden;
-  height: 667px;
-  width: 375px;
+  /* position: fixed; */
+  /* overflow: hidden; */
+  /* height: 667px; */
+  width: 119%;
   z-index: 9999;
   color: #fff;
   text-align: center;
   top: 50%;
   left: 50%;
-  margin-top: -335px;
+  /* margin-top: -335px; */
   /* Negative half of height. */
-  margin-left: -188px;
+  /* margin-left: -188px; */
   /* Negative half of width. */
 }
 
 #numbers {
-  max-width: 300px;
+  /* max-width: 300px; */
   padding: 0 20px;
   margin: 0 auto;
   position: relative;
@@ -29430,7 +29433,7 @@ div.tagsinput span.tag a {
 }
 
 #pincode button {
-  width: 70px;
+  width: 101px;
   height: 70px;
   margin-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.35);
@@ -29438,10 +29441,10 @@ div.tagsinput span.tag a {
   color: #fff;
   font-size: 25px;
   line-height: 50px;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   opacity: 1;
   outline: 0;
-  border: 2px solid #272a2f;
+  /* border: 2px solid #272a2f; */
 }
 
 #pincode button:active {
@@ -29452,7 +29455,7 @@ div.tagsinput span.tag a {
 #fields {
   max-width: 200px;
   padding: 0 20px;
-  margin: 50px auto;
+  margin: 30px auto 50px;
   position: relative;
   display: block;
 }
@@ -29490,7 +29493,7 @@ div.tagsinput span.tag a {
 
 .grid {
   list-style: none;
-  margin-left: -20px;
+  margin-left: -75px;
 }
 
 .grid__col--1-of-3,
@@ -29508,7 +29511,7 @@ div.tagsinput span.tag a {
 .grid__col {
   box-sizing: border-box;
   display: inline-block;
-  margin-right: -.25em;
+  margin-right: -0.25em;
   min-height: 1px;
   padding-left: 20px;
   vertical-align: top;

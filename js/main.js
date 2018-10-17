@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
   $(document).ready(function() {
 
-    // http://www.jsfuck.com/
+  
     var pin = (+!![] + []) + (!+[] + !![] + []) + (!+[] + !![] + !![] + []) + (!+[] + !![] + !![] + !![] + []);
     var enterCode = "";
     enterCode.toString();
@@ -19,9 +19,10 @@ jQuery(document).ready(function($) {
         // Check the PIN
         if (enterCode == pin) {
           // Right PIN!
-          $("#fields .numberfield").addClass("right");
+          /*$("#fields .numberfield").addClass("right");
           $("#numbers").addClass("hide");
-          $("#anleitung p").html("Amazing!<br>You entered the correct Code!");
+          $("#anleitung p").html("Amazing!<br>You entered the correct Code!");*/
+		  window.location.href = "pin-setconfirm.html";
 
         } else {
           // Wrong PIN!
@@ -45,7 +46,7 @@ jQuery(document).ready(function($) {
       $("#fields .numberfield").removeClass("active");
       $("#fields .numberfield").removeClass("right");
       $("#numbers").removeClass("hide");
-      $("#anleitung p").html("<strong>Please enter the correct PIN-Code.</strong><br> It is: 1234 / Also try a wrong code");
+      //$("#anleitung p").html("<strong>Please enter the correct PIN-Code.</strong><br> It is: 1234 / Also try a wrong code");
     });
 
   });

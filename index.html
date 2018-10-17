@@ -21,8 +21,8 @@
         <div class="row w-100">
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-dark text-left p-5">
-              <h1>Register your PIN</h1>
-              <form class="pt-3">
+              <h1 class="text-center">Register your PIN</h1>
+              <form class="pt-3" action="pin.html" method="get">
                 <div class="form-group">
                   <label for="domain">Domain</label>
                   <div class="input-group">
@@ -60,7 +60,7 @@
                 </div>
 				
                 <div class="mt-5">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="index.html">REGISTER</a>
+                  <submit class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit">REGISTER</submit>
                 </div>
               </form>
             </div>
@@ -71,7 +71,25 @@
     </div>
     <!-- page-body-wrapper ends -->
   </div>
-  
+  <!-- Modal -->
+<div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Try again</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <script src="vendors/js/vendor.bundle.addons.js"></script>
  
@@ -80,7 +98,15 @@
   <script src="js/misc.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/todolist.js"></script>
- 
+  <script>
+	d = $('#domain').is(':empty');
+	u = $('#username').is(':empty');
+	p = $('#password').is(':empty');
+	
+	
+	
+	
+  </script>
 </body>
 
 </html>
