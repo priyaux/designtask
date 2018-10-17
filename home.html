@@ -21,47 +21,9 @@
         <div class="row w-100">
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-dark text-left p-5">
-              <h1 class="text-center">Register your PIN</h1>
-              <form class="pt-3" action="pin.html" method="get" class="cmxform" id="signupForm">
-                <div class="form-group">
-                  <label for="domain">Domain</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend bg-transparent">
-                      <span class="input-group-text bg-transparent border-right-0">
-                        <span class="fa fa-globe"></span>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control form-control-lg border-left-0" id="domain" required>
-                  </div>
-                </div>
-				
-				<div class="form-group">
-                  <label for="username">Username</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend bg-transparent">
-                      <span class="input-group-text bg-transparent border-right-0">
-                        <span class="fa fa-user"></span>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control form-control-lg border-left-0" id="username" required>
-                  </div>
-                </div>
-				
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend bg-transparent">
-                      <span class="input-group-text bg-transparent border-right-0">
-                        <span class="fa fa-lock"></span>
-                      </span>
-                    </div>
-                    <input type="password" class="form-control form-control-lg border-left-0" id="password" required minlength="8" >                        
-                  </div>
-                </div>
-				
-                <div class="mt-5">
-                  <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit">REGISTER</button>
-                </div>
+				<a href="profile.html" class="btn btn-secondary btn-fw float-right">Logout</a><p>&nbsp;</p>
+              <h1 class="text-center">Home</h1>
+              
               </form>
             </div>
           </div>
@@ -98,8 +60,6 @@
   <script src="js/misc.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/todolist.js"></script>
-  <script src="js/form-validation.js"></script>
-  <script src="js/bt-maxLength.js"></script>
   <script>
 	d = $('#domain').is(':empty');
 	u = $('#username').is(':empty');
